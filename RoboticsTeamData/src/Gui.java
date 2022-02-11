@@ -10,6 +10,7 @@ public class Gui {
     static String autonomousPointsOutput = "";
     static String shootingPointsOutput = "";
     static String climbingPointsOutput = "";
+    static String gap = ", ";
 
     public static void GUI() {
 
@@ -174,7 +175,6 @@ public class Gui {
         submitButton.setBorder(BorderFactory.createTitledBorder((BorderFactory.createBevelBorder(0, Color.lightGray, Color.gray))));
         submitButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent event) {
-                String gap = ", ";
 
                 teamNameOutput = teamName.getText();
                 teamNumberOutput = teamNumber.getText();
