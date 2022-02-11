@@ -5,6 +5,12 @@ import java.awt.event.ActionListener;
 
 public class Gui {
 
+    static String teamNameOutput = "";
+    static String teamNumberOutput = "";
+    static String autonomousPointsOutput = "";
+    static String shootingPointsOutput = "";
+    static String climbingPointsOutput = "";
+
     public static void GUI() {
 
         // Test Comment
@@ -39,7 +45,7 @@ public class Gui {
         JTextField teamName = new JTextField();
         JTextField teamNumber = new JTextField();
         JButton nextButton1 = new JButton("Next Page");
-        ImageIcon image = new ImageIcon("src/Mechanical Monarchy.png");
+        ImageIcon image = new ImageIcon("RoboticsTeamData/src/Mechanical Monarchy.png");
         JLabel logo = new JLabel(image);
 
         // Frame 2
@@ -170,11 +176,11 @@ public class Gui {
             public void actionPerformed(ActionEvent event) {
                 String gap = ", ";
 
-                String teamNameOutput = teamName.getText();
-                String teamNumberOutput = teamNumber.getText();
-                String autonomousPointsOutput = autonomousPoints.getText();
-                String shootingPointsOutput = shootingPoints.getText();
-                String climbingPointsOutput = climbingPoints.getText();
+                teamNameOutput = teamName.getText();
+                teamNumberOutput = teamNumber.getText();
+                autonomousPointsOutput = autonomousPoints.getText();
+                shootingPointsOutput = shootingPoints.getText();
+                climbingPointsOutput = climbingPoints.getText();
 
                 System.out.println(teamNameOutput + gap + teamNumberOutput + gap + autonomousPointsOutput + gap + shootingPointsOutput + gap + climbingPointsOutput);
 
