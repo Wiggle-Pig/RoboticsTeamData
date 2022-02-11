@@ -7,6 +7,8 @@ public class Gui {
 
     public static void GUI() {
 
+        // Test Comment
+
         ///////////////////////// Frames \\\\\\\\\\\\\\\\\\\\\\\\\
 
         JFrame frame1 = new JFrame();
