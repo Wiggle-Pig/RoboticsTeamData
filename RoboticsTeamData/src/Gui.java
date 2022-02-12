@@ -62,6 +62,8 @@ public class Gui {
         Font headingFont = new Font("OCR A Extended", Font.PLAIN, 32);
         Font textFont = new Font("OCR A Extended", Font.PLAIN, 24);
         Color orange = new Color(241, 89, 33);
+        Color lightBorder = new Color(100, 100, 100);
+        Color darkBorder = new Color(75, 75, 75);
 
 
 
@@ -97,14 +99,14 @@ public class Gui {
 
         // Team Name Configuration
         teamName.setBounds(50, 150, 500, 75);
-        teamName.setBorder(BorderFactory.createTitledBorder((BorderFactory.createBevelBorder(0, Color.lightGray, Color.gray)), "Team Name", 1, 1, headingFont, orange));
+        teamName.setBorder(BorderFactory.createTitledBorder((BorderFactory.createBevelBorder(0, lightBorder, darkBorder)), "Team Name", 1, 1, headingFont, orange));
         teamName.setBackground(Color.darkGray);
         teamName.setForeground(orange);
         teamName.setFont(textFont);
 
         // Team Number Configuration
         teamNumber.setBounds(50, 350, 500, 75);
-        teamNumber.setBorder(BorderFactory.createTitledBorder((BorderFactory.createBevelBorder(0, Color.lightGray, Color.gray)), "Team Number", 1, 1, headingFont, orange));
+        teamNumber.setBorder(BorderFactory.createTitledBorder((BorderFactory.createBevelBorder(0, lightBorder, darkBorder)), "Team Number", 1, 1, headingFont, orange));
         teamNumber.setBackground(Color.darkGray);
         teamNumber.setForeground(orange);
         teamNumber.setFont(textFont);
@@ -121,21 +123,21 @@ public class Gui {
 
         // Autonomous Points Configuration
         autonomousPoints.setBounds(50, 150, 600, 75);
-        autonomousPoints.setBorder(BorderFactory.createTitledBorder((BorderFactory.createBevelBorder(0, Color.lightGray, Color.gray)), "Points Scored in Autonomous", 1, 1, headingFont, orange));
+        autonomousPoints.setBorder(BorderFactory.createTitledBorder((BorderFactory.createBevelBorder(0, lightBorder, darkBorder)), "Points Scored in Autonomous", 1, 1, headingFont, orange));
         autonomousPoints.setBackground(Color.darkGray);
         autonomousPoints.setForeground(orange);
         autonomousPoints.setFont(textFont);
 
         // Shooting Points Configuration
         shootingPoints.setBounds(50, 275, 600, 75);
-        shootingPoints.setBorder(BorderFactory.createTitledBorder((BorderFactory.createBevelBorder(0, Color.lightGray, Color.gray)), "Points Scored by Shooting", 1, 1, headingFont, orange));
+        shootingPoints.setBorder(BorderFactory.createTitledBorder((BorderFactory.createBevelBorder(0, lightBorder, darkBorder)), "Points Scored by Shooting", 1, 1, headingFont, orange));
         shootingPoints.setBackground(Color.darkGray);
         shootingPoints.setForeground(orange);
         shootingPoints.setFont(textFont);
 
         // Climbing Points Configuration
         climbingPoints.setBounds(50, 400, 600, 75);
-        climbingPoints.setBorder(BorderFactory.createTitledBorder((BorderFactory.createBevelBorder(0, Color.lightGray, Color.gray)), "Points Scored by Climbing", 1, 1, headingFont, orange));
+        climbingPoints.setBorder(BorderFactory.createTitledBorder((BorderFactory.createBevelBorder(0, lightBorder, darkBorder)), "Points Scored by Climbing", 1, 1, headingFont, orange));
         climbingPoints.setBackground(Color.darkGray);
         climbingPoints.setForeground(orange);
         climbingPoints.setFont(textFont);
@@ -148,7 +150,7 @@ public class Gui {
         nextButton1.setBounds(1000, 575, 200, 50);
         nextButton1.setFont(textFont);
         nextButton1.setBackground(orange);
-        nextButton1.setBorder(BorderFactory.createTitledBorder((BorderFactory.createBevelBorder(0, Color.lightGray, Color.gray))));
+        nextButton1.setBorder(BorderFactory.createTitledBorder((BorderFactory.createBevelBorder(0, lightBorder, darkBorder))));
         nextButton1.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent event) {
                 frame1.setVisible(false);
@@ -160,7 +162,7 @@ public class Gui {
         lastButton1.setBounds(50, 575, 200, 50);
         lastButton1.setFont(textFont);
         lastButton1.setBackground(orange);
-        lastButton1.setBorder(BorderFactory.createTitledBorder((BorderFactory.createBevelBorder(0, Color.lightGray, Color.gray))));
+        lastButton1.setBorder(BorderFactory.createTitledBorder((BorderFactory.createBevelBorder(0, lightBorder, darkBorder))));
         lastButton1.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent event) {
                 frame1.setVisible(true);
@@ -172,7 +174,7 @@ public class Gui {
         submitButton.setBounds(1000, 575, 200, 50);
         submitButton.setFont(textFont);
         submitButton.setBackground(orange);
-        submitButton.setBorder(BorderFactory.createTitledBorder((BorderFactory.createBevelBorder(0, Color.lightGray, Color.gray))));
+        submitButton.setBorder(BorderFactory.createTitledBorder((BorderFactory.createBevelBorder(0, lightBorder, darkBorder))));
         submitButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent event) {
 
