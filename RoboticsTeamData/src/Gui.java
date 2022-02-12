@@ -12,6 +12,8 @@ public class Gui {
     static String climbingPointsOutput = "";
     static String gap = ", ";
 
+    static String textOutput = "";
+
     public static void GUI() {
 
         ///////////////////////// Frames \\\\\\\\\\\\\\\\\\\\\\\\\
@@ -180,7 +182,8 @@ public class Gui {
                 shootingPointsOutput = shootingPoints.getText();
                 climbingPointsOutput = climbingPoints.getText();
 
-                System.out.println(teamNameOutput + gap + teamNumberOutput + gap + autonomousPointsOutput + gap + shootingPointsOutput + gap + climbingPointsOutput);
+                textOutput = teamNameOutput + gap + teamNumberOutput + gap + autonomousPointsOutput + gap + shootingPointsOutput + gap + climbingPointsOutput;
+                Output.main();
 
                 System.exit(0);
             }
